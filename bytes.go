@@ -13,8 +13,8 @@ func (b Bytes) ToHexStr() string {
 	return hex.EncodeToString(b)
 }
 
-// ToBase64 转换为base64字符串
-func (b Bytes) ToBase64() string {
+// ToBase64Str 转换为base64字符串
+func (b Bytes) ToBase64Str() string {
 	return base64.StdEncoding.EncodeToString(b)
 }
 
