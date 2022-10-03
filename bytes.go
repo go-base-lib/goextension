@@ -8,6 +8,10 @@ import (
 
 type Bytes []byte
 
+func (b Bytes) ToString() string {
+	return string(b)
+}
+
 // ToHexStr 转16进制字符串
 func (b Bytes) ToHexStr() string {
 	return hex.EncodeToString(b)
