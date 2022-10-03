@@ -8,14 +8,14 @@ import (
 
 type Bytes []byte
 
-// ToHex 转二进制
-func (b Bytes) ToHex() String {
-	return String(hex.EncodeToString(b))
+// ToHexStr 转16进制字符串
+func (b Bytes) ToHexStr() string {
+	return hex.EncodeToString(b)
 }
 
-// ToBase64 转换为base64
-func (b Bytes) ToBase64() String {
-	return String(base64.StdEncoding.EncodeToString(b))
+// ToBase64 转换为base64字符串
+func (b Bytes) ToBase64() string {
+	return base64.StdEncoding.EncodeToString(b)
 }
 
 // DecodeBase64 base64解码
